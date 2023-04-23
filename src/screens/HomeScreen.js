@@ -21,6 +21,10 @@ export default function HomeScreen (){
     const toStyledComponentsScreen = () => {
         navigation.navigate("StyledComponents")
     }
+    const toUsingApisScreen = ()=> {
+        navigation.navigate("UsingApis")
+    }
+
     return(
 
         <Container>
@@ -34,6 +38,8 @@ export default function HomeScreen (){
             <NavButton onPress={toFlatListScreen} text="Aula de FlatList"/>
 
             <NavButton onPress={toStyledComponentsScreen} text="Aula de Styled Components"/>
+
+            <NavButton onPress={toUsingApisScreen } text="Aula de Consumo de Apis"/>
         </Container>
     )
 }
