@@ -19,7 +19,6 @@ export default function ScrollViewScreen(){
             <NavButton onPress={navigateBack} text="Voltar"/>
             <Container>
                 <ScrollView 
-                    style={styles.container}
                     showsVerticalScrollIndicator={false}
                 >
                     <Text style={styles.item}>
