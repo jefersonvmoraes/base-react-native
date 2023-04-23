@@ -4,6 +4,8 @@ import NavButton from "../components/NavButton";
 import Title from "../components/Title";
 import Container from "../components/Container";
 
+import StyledTitle from "../components/StyledTitle";
+
 export default function HomeScreen (){
 
     const navigation = useNavigation();
@@ -22,7 +24,7 @@ export default function HomeScreen (){
     return(
 
         <Container>
-            <Title text="Óla, mundo!"/>
+            <StyledTitle>Óla, mundo!</StyledTitle>
             <StatusBar style="auto"/>
 
             <NavButton onPress={navigateToNavigationScreen} text="Aula de Navegação"/>

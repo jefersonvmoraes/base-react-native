@@ -10,8 +10,8 @@ export default function StyledComponentsScreen(){
         navigation.goBack();
     }
     return(
-        <StyledContainer color="#f64348">
-            <StyledTitle color="#1c1a1d">Styled Components</StyledTitle>
+        <StyledContainer>
+            <StyledTitle >Styled Components</StyledTitle>
             <StyledButton onPress={navigateBack}>Voltar</StyledButton>
         </StyledContainer>
     )
