@@ -24,6 +24,9 @@ export default function HomeScreen (){
     const toUsingApisScreen = ()=> {
         navigation.navigate("UsingApis")
     }
+    const toAccelerometerScreen = () => {
+        navigation.navigate("Accelerometer")
+    }
 
     return(
 
@@ -40,6 +43,8 @@ export default function HomeScreen (){
             <NavButton onPress={toStyledComponentsScreen} text="Aula de Styled Components"/>
 
             <NavButton onPress={toUsingApisScreen } text="Aula de Consumo de Apis"/>
+
+            <NavButton onPress={toAccelerometerScreen } text="Aula de Periféricos"/>
         </Container>
     )
 }
